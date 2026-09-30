@@ -7,3 +7,20 @@
 // 4. External code should NOT be able to modify the counter directly
 // Hints:
 // See src/example.js to understand how your exported methods will be used
+
+
+let count = 0;
+
+function increment(){
+    return count++;
+}
+
+function decrement(){
+    return count--;
+}
+
+function getCount(){
+    return count;
+}
+
+module.exports = {increment,decrement,getCount}
